@@ -170,6 +170,13 @@ SDL_AppResult SDL_AppEvent(void *appstate, SDL_Event *event) {
           case SDL_GAMEPAD_AXIS_RIGHTY:
             std::cout << "RIGHT JOYSTICK Y: " << value << std::endl;
             break;
+
+          case SDL_GAMEPAD_AXIS_LEFT_TRIGGER:
+            std::cout << "LEFT TRIGGER: " << value << std::endl;
+            break;
+          case SDL_GAMEPAD_AXIS_RIGHT_TRIGGER:
+            std::cout << "RIGHT TRIGGER: " << value << std::endl;
+            break;
         }
       }
 
